@@ -26,7 +26,7 @@ let numberConversion = Number(number);
 let loggedIn = "hh";
 
 let booleanLoggedIn = Boolean(loggedIn);
-console.log(booleanLoggedIn);
+// console.log(booleanLoggedIn);
 
 // 1 => true; 0 => false
 // "" => false; "dhee" => true;
@@ -34,5 +34,21 @@ console.log(booleanLoggedIn);
 let count = 10;
 
 let countToString = String(count);
-console.log(countToString);
-console.log(typeof countToString);
+// console.log(countToString);
+// console.log(typeof countToString);
+
+//**** operations *********
+
+console.log(1 + 2);
+console.log(1 + "2");
+console.log("1"+ 2);
+console.log("1"+ 2 + 2);
+console.log(1 + 2 + "2");
+console.log(+true); // 1
+console.log(+""); // 0
+
+let gameCount = 10;
+++gameCount;
+gameCount++;
+
+console.log(gameCount);
