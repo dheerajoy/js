@@ -39,16 +39,29 @@ let countToString = String(count);
 
 //**** operations *********
 
-console.log(1 + 2);
-console.log(1 + "2");
-console.log("1"+ 2);
-console.log("1"+ 2 + 2);
-console.log(1 + 2 + "2");
-console.log(+true); // 1
-console.log(+""); // 0
+// console.log(1 + 2);
+// console.log(1 + "2");
+// console.log("1"+ 2);
+// console.log("1"+ 2 + 2); // 122
+// console.log(1 + 2 + "2"); //32
+// console.log(+true); // 1
+// console.log(+""); // 0
 
-let gameCount = 10;
-++gameCount;
-gameCount++;
+let a = 10;
+const postfix = a++; //postfix => increments and returns the value before incrementing.
+console.log(postfix , a);
+let b = 10;
+const prefix = ++b; // prefix => increments and returns the value after incrementing.
+console.log(prefix, b);
 
-console.log(gameCount);
+// let x = 3;
+// const y = x++;
+
+// console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+// let a = 3;
+// const b = ++a;
+
+// console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
