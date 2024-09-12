@@ -22,8 +22,20 @@ const myArr = [1,2,3,4,5];
 
 
 // console.log(myArr.includes(2 , 3));
-console.log(myArr.indexOf(0));
+// console.log(myArr.indexOf(0));
 // console.log(myArr);
 
+// let myNewArr = myArr.join('-')
+// console.log( myNewArr);
 
 // slice splice
+
+console.log('initial ',myArr);
+
+const sliceArr = myArr.slice(0 ,2)
+console.log('Slice ',sliceArr);
+
+const spliceArr = myArr.splice(0,2)
+console.log('Splice ', spliceArr);
+
+console.log('original ',myArr);
