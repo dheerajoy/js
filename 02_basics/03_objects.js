@@ -22,7 +22,7 @@ const user = {
 
 
 user.email = 'new-email.com'
-// Object.freeze(user)  // will not allow to change object
+Object.freeze(user)  // will not allow to change object
 user.email = 'change-again-email.com'
 
 // console.log(user);
