@@ -41,12 +41,14 @@ console.log(carDetails.hasOwnProperty('brand')) // true
 // object destructuring
 
 const course = {
-    name:'JavaScript',
-    price: '1000',
+    language:'JavaScript',
+    duration: '20h',
     limit : 1,
     instructor: 'Hitesh'
 }
 
-const { name : title } = course
+const { language } = course;
+const { language : title } = course;
 
-console.log(title);
+console.log(language); // 'JavaScript'
+console.log(title); // 'JavaScript';
