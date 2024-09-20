@@ -26,3 +26,21 @@ switch (day) {
     console.log("Unknown day");
     break;
 }
+
+const month = "jan";
+
+switch (month) {
+  case "jan":
+    console.log("Jan");
+    break;
+  case "feb":
+    console.log("feb");
+    break;
+  case "mar":
+    console.log("march");
+    break;
+
+  default:
+    console.log("Unknown month");
+    break;
+}
