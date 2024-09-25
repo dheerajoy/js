@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
+  <head>
+    <meta charset="UTF-8" />
+
     <title>Document Object Model</title>
-</head>
-<body>
-        <h1 class="bg-black">Learning DOM</h1>
-        <p class="para-graph">Lorem ipsum dolor sit amet.</p>
-</body>
+  </head>
+  <body>
+    <h1 class="title" id="heading">Learning DOM</h1>
+    <p class="para-graph">Lorem ipsum dolor sit amet.</p>
+    <ul id="list">
+      <li class="l-one">One</li>
+      <li class="l-two">Two</li>
+      <li class="l-three">Three</li>
+    </ul>
+    <script>
+      //   console.log(document.getElementById("heading"));
+      //   console.log(document.getElementById("heading").id);
+      //   console.log(document.getElementsByClassName("title"));
+      console.log(document.getElementById("heading").getAttribute("id"));
+    </script>
+  </body>
 </html>
