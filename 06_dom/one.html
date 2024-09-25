@@ -6,9 +6,12 @@
     <title>Document Object Model</title>
   </head>
   <body>
-    <h1 class="title" id="heading">Learning DOM</h1>
+    <h1 class="title" id="heading">
+      Learning DOM <span style="display: none">JavaScript</span>
+    </h1>
+    <h1>heading</h1>
     <p class="para-graph">Lorem ipsum dolor sit amet.</p>
-    <ul id="list">
+    <ul id="list" class="list">
       <li class="l-one">One</li>
       <li class="l-two">Two</li>
       <li class="l-three">Three</li>
@@ -17,7 +20,18 @@
       //   console.log(document.getElementById("heading"));
       //   console.log(document.getElementById("heading").id);
       //   console.log(document.getElementsByClassName("title"));
-      console.log(document.getElementById("heading").getAttribute("id"));
+      //   console.log(document.getElementById("heading").getAttribute("id"));
+      const title = document.getElementById("heading");
+      title.style.backgroundColor = "green";
+      title.style.color = "white";
+      title.style.padding = "20px";
+      title.style.borderRadius = "10px";
+      //   console.log(title.innerHTML);
+      //   console.log(title.innerText); // Learning DOM
+      //   console.log(title.textContent); // Learning DOM JavaScript
+
+      const list = document.querySelector("h1");
+      console.log(list);
     </script>
   </body>
 </html>
