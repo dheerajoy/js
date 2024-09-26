@@ -15,9 +15,10 @@
 
     <p class="para-graph">Lorem ipsum dolor sit amet.</p>
     <ul id="list" class="list">
-      <li class="l-one">One</li>
-      <li class="l-two">Two</li>
-      <li class="l-three">Three</li>
+      <li class="list-item">One</li>
+      <li class="list-item">Two</li>
+      <li class="list-item">Three</li>
+      <li class="list-item">Four</li>
       <input type="button" value="heelo" />
     </ul>
     <script>
@@ -41,11 +42,26 @@
       // console.log(headings);
 
       // const headingId = document.querySelector("#list");
+      // const headingId = document.querySelector(".title");
       // console.log(headingId);
       // console.log(headingId.querySelector("li"));
 
-      const button = document.querySelector("input[type='button']");
-      console.log(button);
+      // const button = document.querySelector("input[type='button']");
+      // console.log(button);
+
+      const nodeList = document.querySelectorAll("li");
+      // nodeList[0].style.color = "green";
+      // console.log(nodeList); // node list
+      // nodeList.forEach((item) => (item.style.color = "green"));
+      nodeList.forEach((item) => {
+        return (item.style.color = "red");
+      });
+
+      const htmlCollection = document.getElementsByClassName("list-item");
+      // htmlCollection to array
+      const htmlArr = Array.from(htmlCollection);
+      htmlArr.map((item) => (item.style.backgroundColor = "blue"));
+      console.log(htmlCollection);
     </script>
   </body>
 </html>
