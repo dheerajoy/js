@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | 04</title>
+  </head>
+  <body style="background-color: grey; color: rgb(237, 237, 237)">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(name) {
+      const list = document.createElement("li");
+      list.innerText = name;
+      document.querySelector(".language").appendChild(list);
+    }
+
+    addLanguage("TypeScript");
+    addLanguage("Python");
+
+    // optimised approach - not traversing tree
+    function addLanguageOptimised(name) {
+      const list = document.createElement("li");
+      list.appendChild(document.createTextNode(name));
+      document.querySelector(".language").appendChild(list);
+    }
+
+    addLanguageOptimised("C++");
+    addLanguageOptimised("Rust");
+
+    // Edit
+    const secondElement = document.querySelector("li:nth-child(2)");
+    // secondElement.innerHTML = "Edit";
+
+    const newText = document.createElement("li");
+    newText.textContent = "new value";
+    secondElement.replaceWith(newText);
+
+    // Edit
+    const firstElement = document.querySelector("li:first-child");
+    firstElement.outerHTML = "<li>outerHTML</li>";
+
+    // Remove
+    const lastElement = document.querySelector("li:last-child");
+    lastElement.remove();
+  </script>
+</html>
