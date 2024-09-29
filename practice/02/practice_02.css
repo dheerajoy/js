@@ -1,0 +1,14 @@
+body {
+  background-color: grey;
+}
+
+.main-section {
+  margin: 100px auto 100px;
+  width: 80%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
