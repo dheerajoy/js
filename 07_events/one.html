@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html Events</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="400px"
+            height="400px"
+            id="photoshop"
+            src="https://picsum.photos/id/236/200/300"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="400px"
+            height="400px"
+            id="japan"
+            src="https://picsum.photos/id/237/200/301"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="400px"
+            height="400px"
+            id="river"
+            src="https://picsum.photos/id/238/200/302"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="400px"
+            height="400px"
+            id="flower"
+            src="https://picsum.photos/id/239/200/300"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="400px"
+            height="400px"
+            id="prayer"
+            src="https://picsum.photos/id/240/200/304"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById('flower').onclick = function(){
+    //     alert("flower clicked")
+    // }
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("clicked inside the ul");
+    //   },
+    //   false
+    // );
+
+    // default is false , add true to make event capture instead of bubbling.
+
+    // document.getElementById("flower").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("flower clicked");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("flower").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("flower clicked");
+    //     e.stopPropagation(); // stops event bubbling
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("clicked google");
+    //   },
+    //   false
+    // );
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          const removeThis = e.target.parentNode;
+          removeThis.remove();
+        }
+      },
+      false
+    );
+
+    //removeIt.parentNode.removeChild(removeIt)
+  </script>
+</html>
