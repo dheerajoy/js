@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>setTimout</title>
   </head>
-  <body></body>
+  <body style="background-color: cornflowerblue">
+    <h1>JavaScript</h1>
+    <button id="stop">stop</button>
+
+    <script>
+      // setTimeout(function () {
+      //   console.log("Dheeraj");
+      // }, 2000);
+
+      const printName = function () {
+        console.log("Dheeraj");
+      };
+
+      const colorChange = function () {
+        document.body.style.backgroundColor = "red";
+      };
+
+      setTimeout(colorChange, 2000);
+      setTimeout(printName, 2000);
+
+      // setInterval(function () {
+      //   console.log("Im interval");
+      // }, 1000);
+    </script>
+  </body>
 </html>
