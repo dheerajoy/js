@@ -22,12 +22,13 @@
         document.body.style.backgroundColor = "red";
       };
 
-      setTimeout(colorChange, 2000);
+      const changeColor = setTimeout(colorChange, 2000);
       setTimeout(printName, 2000);
 
-      // setInterval(function () {
-      //   console.log("Im interval");
-      // }, 1000);
+      document.querySelector("#stop").addEventListener("click", function () {
+        clearTimeout(changeColor);
+        console.log("clearTimeout clicked");
+      });
     </script>
   </body>
 </html>
