@@ -61,7 +61,7 @@ promiseFour
 
 const promiseFive = new Promise((resolve, reject) => {
   setTimeout(() => {
-    let error = true;
+    let error = false;
     if (!error) {
       resolve({ userName: "admin", gender: "male" });
     } else {
@@ -80,3 +80,26 @@ async function consumePromiseFive() {
 }
 
 consumePromiseFive();
+
+// async function getAllUsers() {
+// try {
+//   const respone = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const data = await respone.json();
+//   console.log(data);
+// } catch (error) {
+//   console.log(error);
+// }
+// }
+
+// getAllUsers();
+
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
