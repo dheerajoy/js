@@ -9,8 +9,7 @@
 
 ## parts of oops
 
-Object Literal
-
+- Object Literal {}
 - constructor function
 - prototype
 - classess
