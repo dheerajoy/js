@@ -15,7 +15,7 @@ const userMail = "";
 
 // truthy values
 
-// true , [] , {} , 1 , " " ,"0" , 'false' , funtion() {}
+// true , [] , {} , 1 , " " , "0" , 'false' , funtion() {}
 
 const arr = [];
 const obj = {};
