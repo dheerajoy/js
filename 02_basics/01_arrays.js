@@ -1,10 +1,8 @@
 // Array [ ] - Square Brackets
 
-
-const myArr = [1,2,3,4,5];
+const myArr = [1, 2, 3, 4, 5];
 // const myArr1 = [23 , 'dheeraj' ,true];
 // console.log(myArr[0]);
-
 
 // const arr = new Array(2,'hello',4)
 // console.log(arr);
@@ -20,7 +18,6 @@ const myArr = [1,2,3,4,5];
 
 // myArr.fill('hello',0 ,1)
 
-
 // console.log(myArr.includes(2 , 3));
 // console.log(myArr.indexOf(0));
 // console.log(myArr);
@@ -30,12 +27,12 @@ const myArr = [1,2,3,4,5];
 
 // slice splice
 
-console.log('initial ',myArr);
+console.log("initial ", myArr);
 
-const sliceArr = myArr.slice(0 ,2)
-console.log('Slice ',sliceArr);
+const sliceArr = myArr.slice(0, 2);
+console.log("Slice ", sliceArr);
 
-const spliceArr = myArr.splice(0,2)
-console.log('Splice ', spliceArr);
+const spliceArr = myArr.splice(0, 2);
+console.log("Splice ", spliceArr);
 
-console.log('original ',myArr);
+console.log("original ", myArr);

@@ -7,11 +7,13 @@ const user = {
   },
 };
 
+console.log(typeof user);
+
 // user.welcomeMessage(); // dheeraj , Welcome to our website
 // user.username = "kumar";
 // user.welcomeMessage(); // kumar , Welcome to our website
 
-// console.log(this); // {} context of node , it is different in browser
+// console.log(this); // {} context of node , it is different in browser it is window object
 
 function coffee() {
   console.log(this);

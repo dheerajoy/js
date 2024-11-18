@@ -10,14 +10,19 @@
 // // Passing the greet function as a callback
 // processUserInput(greet);
 
-let x = "apple";
-let y = "cat";
-let z = "ball";
+// let x = "apple";
+// let y = "cat";
+// let z = "ball";
 
-let strings = [x, y, z];
+// let strings = [x, y, z];
+let strings = ["a", "c", "b"];
 
 strings.sort();
 
 let middleString = strings[1];
 
-console.log("The middle string is:", middleString);
+// console.log("The middle string is:", middleString);
+
+let reaction = "yikes";
+reaction[0] = "l";
+// console.log(reaction);

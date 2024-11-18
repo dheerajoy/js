@@ -39,7 +39,7 @@ if (true) {
     // console.log(`Age is ${age} , ${message}`); // Age is 21 , Can Vote
   }
 
-  //   console.log(message); // message is not defined  ---- outside scope
+  // console.log(message); // message is not defined  ---- outside scope
 }
 
 //console.log(age); // age is not defined  ---- outside scope
