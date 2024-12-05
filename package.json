@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start":"nodemon test.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7"
+  }
+}
